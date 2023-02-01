@@ -60,7 +60,22 @@ Console.WriteLine("Pls enter a number: ");
 int num =Convert.ToInt32(Console.ReadLine());
 ShowNumsto1(num);
 */
-// 
+// Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
+/*
+int GetSummBetween2Digit (int num1, int num2)
+{
+    if (num1>num2) return GetSummBetween2Digit (num1-1,num2) + num1;
+    else if (num1<num2) return num2+GetSummBetween2Digit(num1,num2-1);
+    else return 0;
+}
+
+Console.WriteLine("Pls enter the first number: ");
+int M =Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Pls enter the second number: ");
+int N =Convert.ToInt32(Console.ReadLine());
+int result = GetSummBetween2Digit(M,N);
+Console.WriteLine(result);
+*/
 
 
 
